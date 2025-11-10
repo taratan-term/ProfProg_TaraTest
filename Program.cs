@@ -11,6 +11,8 @@ class Program
         mystackname.Push(22);
         mystackname.Push(34); /// Last in, first out
         
+        Console.WriteLine("TESTSTUFFTHEORYSTACCCCKK");
+        
         //// Oberste Nummer anzeigen (Peek)
         Console.WriteLine("Top Number: " + mystackname.Peek()); /// 34
         
