@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+
+class Program2
+{
+    static void Main()
+    {
+        //// Queue erstellen
+        Queue<string> myQueuename = new Queue<string>();
+        myQueuename.Enqueue("Mr. Potato"); /// First in, first out
+        myQueuename.Enqueue("Mr. Carrot");
+        myQueuename.Enqueue("Mr. Cabbage"); 
+        
+        Console.WriteLine("TESTSTUFFTHEORYQUEUEUEUEUUEUE");
+        
+        //// Oberste Element anzeigen (Peek)
+        Console.WriteLine("Top Person: " + myQueuename.Peek()); /// Mr. Potato
+        
+        /// Element entfernen (Pop)
+        Console.WriteLine("Remove Person: " + myQueuename.Dequeue()); /// Mr. Potato removed
+        
+        /// Die restliche Elemente anzeigen
+        Console.WriteLine("Next Person: " + myQueuename.Peek()); /// now Mr. Carrot
+        
+        /// Alle Elemente ausgeben
+        Console.WriteLine("Inhalt der Queue: " + myQueuename.Peek());
+        foreach (string person in myQueuename)
+            {
+            Console.WriteLine(person);
+            }
+    }
+}
